@@ -32,18 +32,22 @@
             lblNomeCompleto = new Label();
             txtNomeCompleto = new TextBox();
             btnSalvar = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            textBox3 = new TextBox();
-            label6 = new Label();
-            textBox4 = new TextBox();
-            label7 = new Label();
-            label8 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
+            lblCep = new Label();
+            lblLinha = new Label();
+            txtLogradouro = new TextBox();
+            lblLogradouro = new Label();
+            txtNumero = new TextBox();
+            lblNumero = new Label();
+            txtComplemento = new TextBox();
+            lblComplemento = new Label();
+            mtbCep = new MaskedTextBox();
+            lblBairro = new Label();
+            lblCidade = new Label();
+            lblUf = new Label();
+            chkSemNumero = new CheckBox();
+            txtCidade = new TextBox();
+            txtBairro = new TextBox();
+            cbxUf = new ComboBox();
             SuspendLayout();
             // 
             // lblNomeCompleto
@@ -59,137 +63,177 @@
             // 
             txtNomeCompleto.Location = new Point(23, 36);
             txtNomeCompleto.Name = "txtNomeCompleto";
-            txtNomeCompleto.Size = new Size(316, 23);
-            txtNomeCompleto.TabIndex = 1;
+            txtNomeCompleto.Size = new Size(379, 23);
+            txtNomeCompleto.TabIndex = 0;
             // 
             // btnSalvar
             // 
             btnSalvar.Image = (Image)resources.GetObject("btnSalvar.Image");
-            btnSalvar.Location = new Point(239, 411);
+            btnSalvar.Location = new Point(339, 410);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(100, 32);
-            btnSalvar.TabIndex = 8;
+            btnSalvar.TabIndex = 9;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSalvar.UseVisualStyleBackColor = true;
             btnSalvar.Click += btnSalvar_Click;
             // 
-            // label1
+            // lblCep
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(23, 98);
-            label1.Name = "label1";
-            label1.Size = new Size(28, 15);
-            label1.TabIndex = 9;
-            label1.Text = "Cep";
+            lblCep.AutoSize = true;
+            lblCep.Location = new Point(23, 98);
+            lblCep.Name = "lblCep";
+            lblCep.Size = new Size(28, 15);
+            lblCep.TabIndex = 9;
+            lblCep.Text = "Cep";
             // 
-            // label2
+            // lblLinha
             // 
-            label2.BorderStyle = BorderStyle.Fixed3D;
-            label2.Location = new Point(-4, 75);
-            label2.Name = "label2";
-            label2.Size = new Size(353, 14);
-            label2.TabIndex = 11;
+            lblLinha.BorderStyle = BorderStyle.Fixed3D;
+            lblLinha.Location = new Point(-4, 75);
+            lblLinha.Name = "lblLinha";
+            lblLinha.Size = new Size(452, 14);
+            lblLinha.TabIndex = 11;
             // 
-            // label3
+            // txtLogradouro
             // 
-            label3.BorderStyle = BorderStyle.Fixed3D;
-            label3.Location = new Point(-4, 154);
-            label3.Name = "label3";
-            label3.Size = new Size(353, 13);
-            label3.TabIndex = 12;
-            label3.Click += label3_Click;
+            txtLogradouro.Location = new Point(23, 202);
+            txtLogradouro.Name = "txtLogradouro";
+            txtLogradouro.Size = new Size(178, 23);
+            txtLogradouro.TabIndex = 2;
             // 
-            // textBox2
+            // lblLogradouro
             // 
-            textBox2.Location = new Point(23, 206);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(316, 23);
-            textBox2.TabIndex = 14;
+            lblLogradouro.AutoSize = true;
+            lblLogradouro.Location = new Point(23, 169);
+            lblLogradouro.Name = "lblLogradouro";
+            lblLogradouro.Size = new Size(69, 15);
+            lblLogradouro.TabIndex = 13;
+            lblLogradouro.Text = "Logradouro";
             // 
-            // label4
+            // txtNumero
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(23, 188);
-            label4.Name = "label4";
-            label4.Size = new Size(96, 15);
-            label4.TabIndex = 13;
-            label4.Text = "Nome Completo";
-            label4.Click += label4_Click;
+            txtNumero.Location = new Point(219, 202);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(98, 23);
+            txtNumero.TabIndex = 3;
             // 
-            // label5
+            // lblNumero
             // 
-            label5.BorderStyle = BorderStyle.Fixed3D;
-            label5.Location = new Point(-4, 243);
-            label5.Name = "label5";
-            label5.Size = new Size(353, 13);
-            label5.TabIndex = 15;
+            lblNumero.AutoSize = true;
+            lblNumero.Location = new Point(219, 169);
+            lblNumero.Name = "lblNumero";
+            lblNumero.Size = new Size(51, 15);
+            lblNumero.TabIndex = 16;
+            lblNumero.Text = "Número";
             // 
-            // textBox3
+            // txtComplemento
             // 
-            textBox3.Location = new Point(23, 283);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(316, 23);
-            textBox3.TabIndex = 17;
+            txtComplemento.Location = new Point(12, 274);
+            txtComplemento.Name = "txtComplemento";
+            txtComplemento.Size = new Size(132, 23);
+            txtComplemento.TabIndex = 5;
             // 
-            // label6
+            // lblComplemento
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(23, 265);
-            label6.Name = "label6";
-            label6.Size = new Size(96, 15);
-            label6.TabIndex = 16;
-            label6.Text = "Nome Completo";
+            lblComplemento.AutoSize = true;
+            lblComplemento.Location = new Point(12, 256);
+            lblComplemento.Name = "lblComplemento";
+            lblComplemento.Size = new Size(84, 15);
+            lblComplemento.TabIndex = 18;
+            lblComplemento.Text = "Complemento";
             // 
-            // textBox4
+            // mtbCep
             // 
-            textBox4.Location = new Point(23, 362);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(316, 23);
-            textBox4.TabIndex = 19;
+            mtbCep.Location = new Point(23, 116);
+            mtbCep.Mask = "00000-9999";
+            mtbCep.Name = "mtbCep";
+            mtbCep.Size = new Size(96, 23);
+            mtbCep.TabIndex = 1;
             // 
-            // label7
+            // lblBairro
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(23, 344);
-            label7.Name = "label7";
-            label7.Size = new Size(96, 15);
-            label7.TabIndex = 18;
-            label7.Text = "Nome Completo";
+            lblBairro.AutoSize = true;
+            lblBairro.Location = new Point(176, 256);
+            lblBairro.Name = "lblBairro";
+            lblBairro.Size = new Size(38, 15);
+            lblBairro.TabIndex = 22;
+            lblBairro.Text = "Bairro";
             // 
-            // label8
+            // lblCidade
             // 
-            label8.BorderStyle = BorderStyle.Fixed3D;
-            label8.Location = new Point(-4, 322);
-            label8.Name = "label8";
-            label8.Size = new Size(353, 13);
-            label8.TabIndex = 20;
+            lblCidade.AutoSize = true;
+            lblCidade.Location = new Point(23, 345);
+            lblCidade.Name = "lblCidade";
+            lblCidade.Size = new Size(44, 15);
+            lblCidade.TabIndex = 23;
+            lblCidade.Text = "Cidade";
             // 
-            // maskedTextBox1
+            // lblUf
             // 
-            maskedTextBox1.Location = new Point(23, 116);
-            maskedTextBox1.Mask = "00000-9999";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(96, 23);
-            maskedTextBox1.TabIndex = 21;
+            lblUf.AutoSize = true;
+            lblUf.Location = new Point(180, 345);
+            lblUf.Name = "lblUf";
+            lblUf.Size = new Size(21, 15);
+            lblUf.TabIndex = 24;
+            lblUf.Text = "UF";
+            // 
+            // chkSemNumero
+            // 
+            chkSemNumero.AutoSize = true;
+            chkSemNumero.Location = new Point(339, 202);
+            chkSemNumero.Name = "chkSemNumero";
+            chkSemNumero.Size = new Size(101, 19);
+            chkSemNumero.TabIndex = 4;
+            chkSemNumero.Text = "Sem Número?";
+            chkSemNumero.UseVisualStyleBackColor = true;
+            chkSemNumero.CheckedChanged += chkSemNumero_CheckedChanged;
+            // 
+            // txtCidade
+            // 
+            txtCidade.Location = new Point(12, 363);
+            txtCidade.Name = "txtCidade";
+            txtCidade.Size = new Size(132, 23);
+            txtCidade.TabIndex = 7;
+            // 
+            // txtBairro
+            // 
+            txtBairro.Location = new Point(176, 274);
+            txtBairro.Name = "txtBairro";
+            txtBairro.Size = new Size(132, 23);
+            txtBairro.TabIndex = 6;
+            // 
+            // cbxUf
+            // 
+            cbxUf.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxUf.FormattingEnabled = true;
+            cbxUf.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
+            cbxUf.Location = new Point(180, 363);
+            cbxUf.Name = "cbxUf";
+            cbxUf.Size = new Size(121, 23);
+            cbxUf.TabIndex = 8;
             // 
             // FormCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(351, 454);
-            Controls.Add(maskedTextBox1);
-            Controls.Add(label8);
-            Controls.Add(textBox4);
-            Controls.Add(label7);
-            Controls.Add(textBox3);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(textBox2);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(512, 454);
+            Controls.Add(cbxUf);
+            Controls.Add(txtBairro);
+            Controls.Add(txtCidade);
+            Controls.Add(chkSemNumero);
+            Controls.Add(lblUf);
+            Controls.Add(lblCidade);
+            Controls.Add(lblBairro);
+            Controls.Add(mtbCep);
+            Controls.Add(txtComplemento);
+            Controls.Add(lblComplemento);
+            Controls.Add(txtNumero);
+            Controls.Add(lblNumero);
+            Controls.Add(txtLogradouro);
+            Controls.Add(lblLogradouro);
+            Controls.Add(lblLinha);
+            Controls.Add(lblCep);
             Controls.Add(btnSalvar);
             Controls.Add(txtNomeCompleto);
             Controls.Add(lblNomeCompleto);
@@ -199,7 +243,6 @@
             Name = "FormCadastro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormCadastro";
-            Load += FormCadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -209,17 +252,22 @@
         private Label lblNomeCompleto;
         private TextBox txtNomeCompleto;
         private Button btnSalvar;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private TextBox textBox2;
-        private Label label4;
-        private Label label5;
-        private TextBox textBox3;
-        private Label label6;
-        private TextBox textBox4;
-        private Label label7;
-        private Label label8;
-        private MaskedTextBox maskedTextBox1;
+        private Label lblCep;
+        private Label lblLinha;
+        //private Label label3;
+        private TextBox txtLogradouro;
+        private Label lblLogradouro;
+        private TextBox txtNumero;
+        private Label lblNumero;
+        private TextBox txtComplemento;
+        private Label lblComplemento;
+        private MaskedTextBox mtbCep;
+        private Label lblBairro;
+        private Label lblCidade;
+        private Label lblUf;
+        private CheckBox chkSemNumero;
+        private TextBox txtCidade;
+        private TextBox txtBairro;
+        private ComboBox cbxUf;
     }
 }

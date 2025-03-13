@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             menuStrip1 = new MenuStrip();
             mnsCadastrar = new ToolStripMenuItem();
             mnsSobre = new ToolStripMenuItem();
             mnsSair = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -40,7 +43,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnsCadastrar, mnsSobre, mnsSair });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(315, 24);
+            menuStrip1.Size = new Size(520, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -49,6 +52,7 @@
             mnsCadastrar.Name = "mnsCadastrar";
             mnsCadastrar.Size = new Size(69, 20);
             mnsCadastrar.Text = "Cadastrar";
+            mnsCadastrar.Click += mnsCadastrar_Click;
             // 
             // mnsSobre
             // 
@@ -62,16 +66,28 @@
             mnsSair.Size = new Size(38, 20);
             mnsSair.Text = "Sair";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(532, 383);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(315, 237);
+            ClientSize = new Size(520, 405);
+            Controls.Add(pictureBox1);
             Controls.Add(menuStrip1);
             Name = "FormMain";
             Text = "Form1";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -82,5 +98,6 @@
         private ToolStripMenuItem mnsCadastrar;
         private ToolStripMenuItem mnsSobre;
         private ToolStripMenuItem mnsSair;
+        private PictureBox pictureBox1;
     }
 }
